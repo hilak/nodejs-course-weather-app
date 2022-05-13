@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="icon" href="/img/star_favicon.png">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Use this site to get your weather!</p>
+
+        <form>
+            <input placeholder="location">
+            <button>Search</button>
+        </form>
+
+        <p id="location"></p>
+        <p id="weather"></p>
+    </div>
+
+    {{>footer}}
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
