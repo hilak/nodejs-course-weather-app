@@ -13,7 +13,7 @@ const forecast = (lat, long, callback) => {
             if (body.error) {
                 callback('Error occurred: ' + body.error.info, undefined)
             } else {
-                callback(undefined, body.current.weather_descriptions[0] + `. It is currently ${body.current.temperature} degrees out. It feels like ${body.current.feelslike} degrees.`)
+                callback(undefined, body.current.weather_descriptions[0] + `. Cloud cover is ${body.current.cloudcover}%. It is currently ${body.current.temperature} degrees out. It feels like ${body.current.feelslike} degrees.`)
             }
         }
 
